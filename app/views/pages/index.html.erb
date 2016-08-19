@@ -4,7 +4,7 @@
 <div ng-controller="dataCtrl" ng-init="setup()">
   {{ 1 + 1 }}
   <div ng-repeat="bike in bikes">
-  <p>{{bike.community_name}}</p>
+  <p ng-click="changeStatus(bike)" ng-class="{color: bike.community_name}">{{bike.community_name}}</p>
   </div>
 </div>
 </div>
